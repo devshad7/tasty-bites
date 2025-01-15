@@ -29,7 +29,7 @@ Tasty Bites is a modern and user-friendly restaurant application built with **Ne
 
   - [Next.js](https://nextjs.org/): A React framework for building performant and SEO-friendly web applications.
   - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for designing sleek and responsive UI.
-  - [shadcn](https://shadcn.dev/): A component library for modern UI development.
+  - [shadcn](https://shadcn.com/): A component library for modern UI development.
 
 - **Backend:**
 

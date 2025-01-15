@@ -18,7 +18,8 @@ export default {
 			main: {
 				DEFAULT: '#F0F0F0',
 				foreground: '#3C3C3C',
-				card: '#f6f6f6'
+				card: '#f6f6f6',
+				nav: 'rgb(229 229 229)'
 			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',

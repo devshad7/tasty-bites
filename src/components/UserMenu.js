@@ -62,20 +62,24 @@ const UserMenu = ({ user }) => {
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                        Profile
-                        <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-                    </DropdownMenuItem>
+                    <Link href={'/dashboard/settings'}>
+                        <DropdownMenuItem>
+                            Profile
+                            <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                    </Link>
                     <Link href={'/dashboard/orders'}>
                         <DropdownMenuItem>
                             Orders
                             <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
                         </DropdownMenuItem>
                     </Link>
-                    <DropdownMenuItem>
-                        Settings
-                        <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-                    </DropdownMenuItem>
+                    <Link href={'/dashboard/settings'}>
+                        <DropdownMenuItem>
+                            Settings
+                            <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                    </Link>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={handleClick}>

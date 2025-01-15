@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tasty Bites - Restaurant App
 
-## Getting Started
+Tasty Bites is a modern and user-friendly restaurant application built with **Next.js**, **Tailwind CSS**, **Firebase**, and **shadcn/ui**. It provides user authentication, table-wise order management, and real-time notifications to ensure a seamless customer experience.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Login and Signup:**
+
+  - Users can create an account or log in to access personalized services.
+
+- **Table Selection:**
+
+  - Users can pick any table available in the restaurant.
+
+- **Order Management:**
+
+  - Place orders table-wise from the menu.
+  - View a detailed list of placed orders.
+  - Modify items in the order, such as updating the quantity.
+  - Cancel existing orders.
+
+- **Real-time Notifications:**
+
+  - Notify customers about their order status and updates instantly.
+
+## Tech Stack
+
+- **Frontend:**
+
+  - [Next.js](https://nextjs.org/): A React framework for building performant and SEO-friendly web applications.
+  - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for designing sleek and responsive UI.
+  - [shadcn](https://shadcn.dev/): A component library for modern UI development.
+
+- **Backend:**
+
+  - [Firebase](https://firebase.google.com/): For real-time database, user authentication, and hosting.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/devshad7/tasty-bites.git
+   cd tasty-bites
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up Firebase:**
+
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable Authentication and Firestore Database.
+   - Add your Firebase configuration to a `.env.local` file in the project root:
+     ```env
+     NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+     NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+     NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+     NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+     NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+     NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+     ```
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+## Folder Structure
+
+```
+.
+├── public          # Static assets like images and icons
+├── app             # Next.js App Router and main logic
+│   ├── components  # Reusable UI components
+│   ├── styles      # Tailwind CSS configurations
+│   └── utils       # Helper functions and Firebase configurations
+└── .env.local      # Environment variables (not included in the repository)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **User Authentication:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   - Sign up or log in to access the app.
 
-## Learn More
+2. **Table Selection:**
 
-To learn more about Next.js, take a look at the following resources:
+   - Choose a table to start placing an order.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Placing Orders:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   - Browse the menu and add items to your order.
 
-## Deploy on Vercel
+4. **Order Management:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - View all items in your order.
+   - Modify item quantities or remove items.
+   - Cancel the entire order if needed.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+1. **Build the application:**
+
+   ```bash
+   npm run build
+   ```
+
+2. **Start the production server:**
+
+   ```bash
+   npm start
+   ```
+
+3. **Deploy to Vercel:**
+
+   - Run the command:
+     ```bash
+     vercel deploy
+     ```
+   - Follow the instructions to deploy the application.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Enjoy managing your restaurant orders efficiently with Tasty Bites! If you encounter any issues or have suggestions for improvement, feel free to reach out.
+

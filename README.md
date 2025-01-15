@@ -1,41 +1,41 @@
-# Tasty Bites - Restaurant App
+# Tasty Bites - Restaurant App 🍽️
 
 Tasty Bites is a modern and user-friendly restaurant application built with **Next.js**, **Tailwind CSS**, **Firebase**, and **shadcn/ui**. It provides user authentication, table-wise order management, and real-time notifications to ensure a seamless customer experience.
 
-## Features
+## Features ✨
 
-- **Login and Signup:**
+- **🔑 Login and Signup:**
 
   - Users can create an account or log in to access personalized services.
 
-- **Table Selection:**
+- **🪑 Table Selection:**
 
   - Users can pick any table available in the restaurant.
 
-- **Order Management:**
+- **📋 Order Management:**
 
   - Place orders table-wise from the menu.
   - View a detailed list of placed orders.
   - Modify items in the order, such as updating the quantity.
   - Cancel existing orders.
 
-- **Real-time Notifications:**
+- **📲 Real-time Notifications:**
 
   - Notify customers about their order status and updates instantly.
 
-## Tech Stack
+## Tech Stack 🛠️
 
 - **Frontend:**
 
   - [Next.js](https://nextjs.org/): A React framework for building performant and SEO-friendly web applications.
   - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for designing sleek and responsive UI.
-  - [shadcn](https://shadcn.com/): A component library for modern UI development.
+  - [shadcn](https://shadcn.dev/): A component library for modern UI development.
 
 - **Backend:**
 
   - [Firebase](https://firebase.google.com/): For real-time database, user authentication, and hosting.
 
-## Installation
+## Installation ⚙️
 
 1. **Clone the repository:**
 
@@ -72,7 +72,7 @@ Tasty Bites is a modern and user-friendly restaurant application built with **Ne
 
    Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-## Folder Structure
+## Folder Structure 📂
 
 ```
 .
@@ -84,21 +84,21 @@ Tasty Bites is a modern and user-friendly restaurant application built with **Ne
 └── .env.local      # Environment variables (not included in the repository)
 ```
 
-## Usage
+## Usage 🚀
 
-1. **User Authentication:**
+1. **🔒 User Authentication:**
 
    - Sign up or log in to access the app.
 
-2. **Table Selection:**
+2. **🪑 Table Selection:**
 
    - Choose a table to start placing an order.
 
-3. **Placing Orders:**
+3. **🍔 Placing Orders:**
 
    - Browse the menu and add items to your order.
 
-4. **Order Management:**
+4. **🔄 Order Management:**
 
    - View all items in your order.
    - Modify item quantities or remove items.
@@ -126,11 +126,11 @@ Tasty Bites is a modern and user-friendly restaurant application built with **Ne
      ```
    - Follow the instructions to deploy the application.
 
-## Contributing
+## Contributing 🤝
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## License
+## License 📜
 
 This project is licensed under the [MIT License](LICENSE).
 

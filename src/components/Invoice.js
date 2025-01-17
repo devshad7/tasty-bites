@@ -52,7 +52,7 @@ const Invoice = ({ selectedItems, removeItem, table, setSelectedItems }) => {
                 tableNo: table.name,
                 items: items,
                 isCanceled: false,
-                totalPrice: `₹${totalPrice}`,
+                totalPrice: `₹${totalPrice}.00`,
                 orderStatus: false,
                 createdAt: new Date().toISOString(),
             });

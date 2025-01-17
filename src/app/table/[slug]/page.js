@@ -2,6 +2,7 @@
 
 import Navbar from '@/components/Navbar';
 import TableMenu from '@/components/TableMenu';
+import Loader from '@/components/ui/loader';
 import { auth, db } from '@/config/firebase.config';
 import { onAuthStateChanged } from 'firebase/auth';
 import { collection, getDocs, query, where } from 'firebase/firestore';
@@ -56,7 +57,7 @@ function page({ params }) {
         return () => getUser()
     }, [])
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <Loader />
 
     if (!table) return <div>Table not found</div>;
 

@@ -2,6 +2,7 @@
 
 import Navbar from '@/components/Navbar'
 import Settings from '@/components/Settings'
+import Loader from '@/components/ui/loader'
 import { auth } from '@/config/firebase.config'
 import { onAuthStateChanged } from 'firebase/auth'
 import { useRouter } from 'next/navigation'
@@ -28,7 +29,7 @@ function page() {
   }, [])
 
   if (loading) {
-    return null
+    return <Loader />
   }
 
   return (

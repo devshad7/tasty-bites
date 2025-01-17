@@ -2,6 +2,7 @@
 
 import Navbar from '@/components/Navbar';
 import OrderDetail from '@/components/OrderDetail';
+import Loader from '@/components/ui/loader';
 import { auth, db } from '@/config/firebase.config';
 import { onAuthStateChanged } from 'firebase/auth';
 import { collection, onSnapshot, query, where } from 'firebase/firestore';
@@ -57,7 +58,7 @@ function page({ params }) {
         return () => getUser()
     }, [])
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <Loader />
 
     return (
         <>

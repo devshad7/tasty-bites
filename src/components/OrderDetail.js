@@ -74,7 +74,7 @@ const OrderDetail = ({ order }) => {
                         </div>
                         <div className="space-x-2">
                             <span className="font-semibold">Total:</span>
-                            <span>{order.totalPrice}.00</span>
+                            <span>{order.totalPrice}</span>
                         </div>
                         <div className="space-x-2">
                             <span className="font-semibold">Ordered at:</span>

@@ -8,10 +8,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { EyeIcon, EyeOffIcon } from 'lucide-react'
 import Link from 'next/link'
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
-import { auth } from '@/config/firebase.config'
+import { auth, db } from '@/config/firebase.config'
 import toast from 'react-hot-toast'
+import { collection, doc, setDoc } from 'firebase/firestore'
 
 const Signup = () => {
+
+    const userCollection = collection(db, 'users')
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -27,6 +30,13 @@ const Signup = () => {
                 updateProfile(user, {
                     displayName: name
                 }).then((finalRes) => {
+                    const userDocRef = doc(userCollection, user.uid);
+                    setDoc(userDocRef, {
+                        name: user.displayName,
+                        email: user.email,
+                        mobileNo: null,
+                        address: null,
+                    })
                     toast.success('Account created')
                     setLoading(false)
                 }).catch((err) => {

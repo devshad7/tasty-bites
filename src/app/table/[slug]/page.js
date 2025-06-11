@@ -61,10 +61,9 @@ function page({ params }) {
 
     if (!table) return <div>Table not found</div>;
 
-
     return (
         <>
-            <Navbar user={data} />
+            <Navbar table={table} user={data} />
             <TableMenu table={table} />
         </>
     )

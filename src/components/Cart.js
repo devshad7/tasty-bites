@@ -117,7 +117,7 @@ const Cart = ({ table }) => {
                             </div>
                         </div>
                         <div className='py-2 px-2 flex justify-between items-center'>
-                            <Button className="w-full" onClick={handlePlaceOrder}>Place Order</Button>
+                            <Button className="w-full" onClick={handlePlaceOrder}>Place Orders</Button>
                         </div>
                     </DropdownMenuGroup>
                 </DropdownMenuContent>

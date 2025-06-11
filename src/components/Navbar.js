@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import UserMenu from './UserMenu'
+import Cart from './Cart'
 
-const Navbar = ({ user }) => {
+const Navbar = ({ table, user }) => {
     return (
         <>
             <div className="flex justify-between items-center py-5 border-b border-white px-8 md:px-28">
@@ -11,7 +12,10 @@ const Navbar = ({ user }) => {
                     </Link>
                 </div>
                 <div>
-                    <UserMenu user={user} />
+                    <div className="flex items-center gap-3">
+                        <Cart table={table} />
+                        <UserMenu user={user} />
+                    </div>
                 </div>
             </div>
         </>

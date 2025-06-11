@@ -19,6 +19,7 @@ const Dashboard = () => {
                 ...doc.data(),
             }));
             setData(res);
+            
         });
 
         return () => unsubscribe();

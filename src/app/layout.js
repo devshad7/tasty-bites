@@ -1,5 +1,6 @@
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
 
 export const metadata = {
   title: "Tasty Bites | An Ultimate Restro App",
@@ -14,7 +15,9 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
       >
         <Toaster />
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
